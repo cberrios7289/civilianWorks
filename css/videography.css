@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu:300);
+#menubar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  padding-top: 10px;
+  color: white;
+  font-size: 20px; }
+
+#menu {
+  cursor: pointer;
+  font-size: 24px; }
+
+#navbar-wrapper {
+  width: 30%;
+  background: black;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 0.1s ease-out; }
+
+#navbar-wrapper header ul li {
+  display: block;
+  margin: 30px 25px 20px 0px;
+  cursor: pointer; }
+
+#navbar-wrapper.open {
+  transform: translateX(0);
+  transition: ease-in 0.3s; }
+
+#close {
+  cursor: pointer;
+  font-size: 20px; }
+
+a:visited {
+  color: white;
+  text-decoration: none; }
+
+a:link {
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  opacity: 0.4;
+  transition: ease-in 0.3s; }
+
+a:active {
+  color: white; }
+
+html body {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif; }
+
+.page-section-wrapper {
+  height: 70vh;
+  width: 100%;
+  background: url(images/video.jpg) center center no-repeat;
+  background-size: cover; }
+
+.section-text {
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.6); }
+
+.section-title {
+  margin: 0;
+  color: white;
+  letter-spacing: 25px;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.article-wrapper {
+  width: 100%;
+  max-width: 55rem;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 50px; }
+
+.article-text {
+  margin: 100px auto 100px auto;
+  max-width: 45rem; }
+
+.article-wrapper #video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+
+.article-wrapper #video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.footer-wrapper {
+  height: auto;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 24px; }
+
+.footer-wrapper .footer-content i {
+  border: solid 3px white;
+  border-radius: 50%;
+  padding: 12px; }
+.footer-wrapper .footer-content i:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  transition: ease-in 0.3s; }
+.footer-wrapper .footer-content .fa-youtube {
+  margin-left: 50px; }
+.footer-wrapper .copyright {
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+
+@media only screen and (max-width: 768px) {
+  #navbar-wrapper {
+    width: 40%; }
+
+  .section-title {
+    font-size: 24px; }
+
+  .article-wrapper {
+    max-width: 35rem; } }
+@media only screen and (max-width: 450px) {
+  #navbar-wrapper {
+    width: 50%; }
+
+  .section-title {
+    font-size: 14px;
+    letter-spacing: 10px; }
+
+  .article-wrapper {
+    font-size: 12px;
+    max-width: 25rem;
+    height: auto; } }
+
+/*# sourceMappingURL=videography.css.map */

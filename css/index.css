@@ -1,0 +1,261 @@
+body{
+	margin:0;
+	
+}
+#loader-wrapper{
+	height: 100%;
+	width:100%;
+	position: fixed;
+	left:0;
+	top:0;
+	z-index: 1000;
+
+}
+
+#loader{
+	display: block;
+	width:150px;
+	height:150px;
+	border: 3px solid transparent;
+	border-top-color:  #3498db;
+	border-radius: 50%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -75px 0 0 - 75px;
+
+	animation: spin 2s infinite linear;
+}
+
+#loader:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right:5px;
+	bottom:5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #e74c3c;
+	
+	animation: spin 3s infinite linear;
+}
+#loader:after{
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f9c922;
+
+	animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+	0%{
+		transform:rotate(0deg);
+	}100%{
+		transform:rotate(360deg);
+	}
+}
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	z-index: 500;
+
+}
+#loader-wrapper .loader-section.section-left{
+	left:0;
+}
+#loader-wrapper .loader-section.section-right{
+	right:0;
+}
+/*Loaded*/
+.loaded #loader-wrapper .loader-section.section-left{
+	transform: translateX(-100%);
+	transition:all 0.3s 0.3s ease-out;
+
+}
+.loaded #loader-wrapper .loader-section.section-left{
+	transform: translateX(100%);
+	transition:all 0.3s 0.3s ease-out;
+}
+.loaded #loader{
+	opacity:0;
+	transition:all 0.3s 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+	visibility: hidden;
+	transform: translateY(-100%);
+	transition:all 0.3s 0.3s ease-out;
+}
+/*Actual Styles*/
+#header{
+	width: 100%;
+	position: fixed;
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-bottom: 40px;
+	background: black;
+	z-index: 5;	
+	color: white;
+}
+
+#logo, #nav-container{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 4px;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#nav-container ul li{
+	margin-right: 15px;
+	display: inline-block;
+}
+nav ul{
+	margin: 0;
+
+}
+a:link{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: black;
+	border-bottom: solid 1px;
+	border-color:black;
+
+}
+a:active{
+	color: black;
+}
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+#logo-container{
+	float: left;
+}
+#nav-container{
+	float: right;
+}
+
+#jumbotron-container{
+		background: url(images/city.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  	background-size: cover;
+	text-align: center;
+	color: white;
+	height: 750px;
+	
+}
+#jumbotron-text{
+	padding-top: 250px;
+
+}
+#jumbotron-text h1{
+	font-family: 'Raleway', sans-serif;
+	letter-spacing:5px; 
+	font-size: 48px;
+
+}
+#jumbotron-text .sub-text{
+	font-family: 'Arvo', serif;	font-size:28px;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+/*CONTACT STYLES */
+#pop_background{
+	position: fixed;
+	width: 100%;
+	height:1000px;
+	top:0;
+	left:0;
+	background: #000;
+	opacity: .8;
+	z-index: 1000;
+	cursor: pointer;
+	display: none;
+}
+#pop_box{
+	position: absolute;
+	background:#fff;
+	width: 30%;
+	margin: 100px 0 0 35%;
+	padding: 20px;
+	z-index: 1500;
+	display: none;
+}
+#close{
+	width: 30px;
+	height:30px;
+	border-radius: 50%;
+	border: 1px solid #999;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	float:right;
+	cursor: pointer;
+}
+form input{
+	font-family: 'Raleway', sans-serif;
+	color: black;	
+	display: block;
+	height: 50px;
+	font-size: 20px;
+	margin-bottom: 5px;
+	width: 400px;
+}
+#message{
+	height: 250px;
+
+}
+#submit{
+	color:white;
+	background: black;
+	width: 150px;
+}
+
+
+/*Footer Styles begin now*/
+#footer_container{
+	width:100%;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	background:black;
+	height: 200px;	
+	text-align: center;
+}
+.copyright{
+	font-family: 'Raleway', sans-serif;
+	padding-top: 20px;
+	font-size: 20px;
+	letter-spacing:5px;
+}
+.social_feeds i{
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-right: 25px;
+	font-size: 18px;
+	border-color:white;
+	border: solid 2px;
+	border-radius: 50%;
+	padding: 15px;
+	cursor: pointer;
+}
+.social_feeds i:hover{
+	color: black;
+	background: white;
+	border-color: black;
+	transition: .5s;
+}

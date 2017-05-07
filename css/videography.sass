@@ -1,0 +1,48 @@
+@import 'variables'
+@import 'navigation'
+
+html
+	body
+		padding: 0
+		margin: 0
+		font-family: $font
+
+.page-section-wrapper
+	height: 70vh
+	width: 100%
+	background: url(images/video.jpg) center center no-repeat
+	background-size: cover
+
+.section-text
+	height: 70vh
+	background: $background-shade
+
+.section-title
+	margin: 0
+	color: white
+	letter-spacing: 25px
+	font-size: 36px
+	text-align: center 
+	text-transform: uppercase
+
+@import 'article'
+
+.article-wrapper
+	#video
+		position: relative
+		padding-bottom: 56.25% /* 16:9 */
+		padding-top: 25px
+		height: 0 
+
+.article-wrapper
+	#video
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+
+
+@import 'footer'
+@import 'media'
