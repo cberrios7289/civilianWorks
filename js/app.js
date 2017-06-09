@@ -61,7 +61,6 @@ $(document).ready(function(){
 	};
 	verticalAlign($('.landing-page-wrapper'), $('.text'));
 	verticalAlign($('#about-section'), $('#about-section-quote'));
-	verticalAlign($('#about-indepth'), $('#about-indepth-text'));
 	verticalAlign($('#contact-img'), $('#contact-text'));
 	verticalAlign($('#contact-info-wrapper'), $('.contact-info-text'));		
 	verticalAlign($('.landing-faqs-page-wrapper'),$('#faqs-tagline'));

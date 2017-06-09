@@ -32,24 +32,24 @@ html, body{
 	padding: none;
 }
 .landing-page-wrapper #education{
-	background: url(images/education-min.jpg) center center no-repeat;
+	background: url(images/education-vert.jpg) center center no-repeat;
 	background-size: cover;
 }
 .landing-page-wrapper #music{
-	background: url(images/music-min.jpg) center center no-repeat;
+	background: url(images/music-vert.jpg) center center no-repeat;
 	background-size: cover;
 }
 .landing-page-wrapper #photography{
-	background: url(images/photography-min.jpg) center center no-repeat;
+	background: url(images/photography-vert.jpg) center center no-repeat;
 	background-size: cover;
 }
 .landing-page-wrapper #videography{
-	background: url(images/video.jpg) center center no-repeat;
+	background: url(images/video-vert.jpg) center center no-repeat;
 	background-size: cover;
 }
 .img-wrapper-text{
 	text-align: center;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.1);
 	color: white;
 	height: 100vh;	
 }
@@ -164,30 +164,29 @@ a:active{
 
 */
 #about-section{
-	height: 60vh;
+	height: 100vh;
 	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
-}
-#about-section-img{
-	background: url(images/chauncey.jpg) center center no-repeat;
-	height: 60vh;
-	background-size: cover;	
-	width: 50%;
-	float: left;
-}
-#about-section-quote{
-	width: 50%;
-	float: left;
-	text-align: center;
-	font-size: 36px;
+	background: url(images/aboutme.jpg) center center no-repeat;
+	background-size: cover;
+	color: white;
 
 }
-#about-indepth{
-	height: 40vh;
-	font-family: 'Ubuntu', sans-serif;
-	text-align: center;
-	background:#d6d7d8;
-	font-size: 18px;
+#about-shade{
+	float: right;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	width: 40%;
+}
+
+#about-section-quote{
+	width: 100%;
+	text-align: left;
+	max-width: 25rem;
+	margin: auto;
+
+
+
 }
 /*
 
@@ -201,12 +200,12 @@ a:active{
 
 }
 #contact-img{
-	background: url(images/station.jpg) center center no-repeat;
+	background: url(images/citynyc.jpg) center center no-repeat;
 	height: 50vh;
 	background-size: cover;	
 }
 #contact-img-text-wrapper{	
-	height: 50vh;
+	height: inherit;
 	background: rgba(0,0,0,0.4);
 	text-align: center;	
 	font-size: 28px;
@@ -214,12 +213,28 @@ a:active{
 }
 #contact-info-wrapper{
 	height: 50vh;
-	background:#d6d7d8;	
+	color: black;	
 	text-align: center;	
 }
 .contact-info-text{
-
+	float: left;
+	width: 33%;
 }
+.facebook-big, .instagram-big, .envelope-big{
+	font-size: 72px;
+	cursor: pointer;
+	padding-bottom: auto;
+}
+.social_icon{
+	height: 100%;
+}
+.contact-info-text:hover{
+	background: black;
+	color: white;
+	transition: ease-in 0.4s;
+}
+
+
 /*
 
 	MEDIA SCREEN BEGINNING 
